@@ -573,6 +573,83 @@
             opacity: 1;
             transform: translateY(0);
         }
+
+        /* Enhanced mobile and tablet responsive design */
+        @media (max-width: 1024px) {
+            .container {
+                padding: 0 15px;
+            }
+            
+            .research-cards {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+            
+            .hero-content {
+                grid-template-columns: 1fr;
+                gap: 30px;
+                text-align: center;
+            }
+            
+            .hero-text h1 {
+                font-size: 3rem;
+            }
+            
+            .profile-image {
+                width: 150px;
+                height: 150px;
+                font-size: 3rem;
+            }
+        }
+
+        /* Additional mobile fixes for very small screens */
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 8px;
+            }
+            
+            .header {
+                padding: 10px 0;
+            }
+            
+            .hero {
+                padding-top: 60px;
+            }
+            
+            .hero-text h1 {
+                font-size: 1.8rem;
+            }
+            
+            .hero-text .subtitle {
+                font-size: 1rem;
+            }
+            
+            .section-title {
+                font-size: 1.6rem;
+            }
+            
+            .research-card-icon {
+                font-size: 2rem;
+            }
+            
+            .research-card-title {
+                font-size: 1.1rem;
+            }
+            
+            .timeline-content {
+                padding: 15px;
+            }
+            
+            .timeline-item {
+                margin-bottom: 30px;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+        }
     </style>
 </head>
 <body>
